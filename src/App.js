@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 function FormValidation() {
+  useEffect(()=>{
+    document.title="VALIDATION FORM";
+  })
   const [formData, setFormData] = useState({
     username: '',
     email: '',
